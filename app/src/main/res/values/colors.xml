@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
+    <color name="themeBlue">#2B94FD</color><!--这是鑫鑫快运的蓝色主题：选中，主题，按钮-->
     <!--下面是-->
     <color name="white">#ffffff</color> <!-- 白色 -->
     <color name="ivory">#fffff0</color> <!-- 象牙色 -->

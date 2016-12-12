@@ -1,13 +1,20 @@
 <resources>
-    <string name="app_name">sixGold</string>
-
+    <string name="app_name">鑫鑫快运</string>
+    <!--主页上的-->
     <string name="homepage">主页</string>
     <string name="individual_order">个人订单</string>
     <string name="nearby">附近</string>
     <string name="I">我</string>
+    <string name="express">快递</string>
+    <string name="local_town_delivery">同城配送</string>
+    <string name="online_store">商城</string>
+    <string name="long_distance_freight">长途货运</string>
+    <!---->
+    <string name="click_to_enter">点击进入</string>
     <string name="message">消息</string>
     <string name="order_message">订单消息</string>
     <string name="system_message">系统消息</string>
+    <string name="user_name">用户名</string>
     <string name="my_pay_by_other">我的代付</string>
     <string name="scanning">扫一扫</string>
     <string name="my_point_score">我的积分</string>
@@ -31,6 +38,8 @@
     <string name="please_enter_password">请输入6-20位英文或数字密码</string>
     <string name="I_have_agreed">我已同意鑫鑫快运的《用户协议》</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">我是空白的fragment页面</string>
 
 
 </resources>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_my_head_image"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_my_head_image"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/iv_my_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_my_pay"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_my_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_my_pay"
+            android:text="@string/my_pay_by_other" />
+
+        <ImageView
+            android:id="@+id/iv_my_pay_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_scanning"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_scanning"
+            android:text="@string/scanning" />
+
+        <ImageView
+            android:id="@+id/iv_scanning_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_my_point_score"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_my_point_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_my_point_score"
+            android:text="@string/my_point_score" />
+
+        <ImageView
+            android:id="@+id/iv_my_point_score_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_coupon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_coupon"
+            android:text="@string/coupon" />
+
+        <ImageView
+            android:id="@+id/iv_coupon_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_share_to_friends"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_share_to_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_share_to_friends"
+            android:text="@string/share_to_friends" />
+
+        <ImageView
+            android:id="@+id/iv_share_to_friends_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_express_query"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_express_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_express_query"
+            android:text="@string/express_query" />
+
+        <ImageView
+            android:id="@+id/iv_express_query_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_about_us"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_about_us"
+            android:text="@string/about_us" />
+
+        <ImageView
+            android:id="@+id/iv_about_us_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_feedback"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_feedback"
+            android:text="@string/feedback" />
+
+        <ImageView
+            android:id="@+id/iv_feedback_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_contact_customer_service"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_contact_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_contact_customer_service"
+            android:text="@string/contact_customer_service" />
+
+        <ImageView
+            android:id="@+id/iv_contact_customer_service_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_common_problems"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_common_problems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_common_problems"
+            android:text="@string/common_problems" />
+
+        <ImageView
+            android:id="@+id/iv_common_problems_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_agreement_terms"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_local_florist_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_agreement_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_agreement_terms"
+            android:text="@string/agreement_terms" />
+
+        <ImageView
+            android:id="@+id/iv_agreement_terms_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"/>
+</LinearLayout>
