@@ -13,6 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.lisa.administrator.sixgold.R;
+import com.lisa.administrator.sixgold.activity.HomeActivity;
+import com.lisa.administrator.sixgold.activity.HomeExpressActivity;
+import com.lisa.administrator.sixgold.activity.HomeLocalTownDeliveryActivity;
+import com.lisa.administrator.sixgold.activity.HomeLongDistanceFreightActivity;
 import com.lisa.administrator.sixgold.adapter.MyPagerAdapter;
 
 import java.lang.ref.WeakReference;
@@ -24,7 +28,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
-
+/**
+ * create by Lisa in2016/12/13
+ */
 public class HomeFragment extends Fragment implements ViewPager.OnPageChangeListener, View.OnTouchListener {
     public static final int VIEW_PAGER_DELAY = 2000;
     private MyPagerAdapter mAdapter;
@@ -156,10 +162,6 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         mThread.start();
     }
 
-
-
-
-
     ///////////////////////////////////////////////////////////////////////////
     // ViewPager的监听事件
     ///////////////////////////////////////////////////////////////////////////
@@ -212,29 +214,34 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         binder.unbind();
         isAutoPlay = false;//刚开始没有在这里加上这句话，然后跳转到其他的fragment时，空指针
         // homeFragment.mViewPager.setCurrentItem(++homeFragment.currentViewPagerItem);报空指针的错误；
-        isHomeFragment  =false;
+        isHomeFragment = false;
     }
 
     @OnClick({R.id.iv_homefragment_express, R.id.iv_homefragment_local_town_delivery, R.id.iv_homefragment_online_store, R.id.iv_homefragment_long_distance_freight})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_homefragment_express:
+                ((HomeActivity) getActivity()).openActivity(HomeExpressActivity.class);
                 break;
             case R.id.iv_homefragment_local_town_delivery:
+                ((HomeActivity) getActivity()).openActivity(HomeLocalTownDeliveryActivity.class);
                 break;
             case R.id.iv_homefragment_online_store:
-//                Toast.makeText().show();
+                ((HomeActivity) getActivity()).showToast("商城正在紧急开发中，请期待。。。");
                 break;
             case R.id.iv_homefragment_long_distance_freight:
+                ((HomeActivity)getActivity()).openActivity(HomeLongDistanceFreightActivity.class);
                 break;
         }
     }
 
     private static class MyHandler extends Handler {
         private WeakReference<HomeFragment> mWeakReference;
+
         public MyHandler(HomeFragment homeFragment) {
             mWeakReference = new WeakReference<HomeFragment>(homeFragment);
         }
+
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

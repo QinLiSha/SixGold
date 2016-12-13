@@ -9,22 +9,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-             <!--<intent-filter>-->
-             <!--<action android:name="android.intent.action.MAIN" /
-             >-->
-             <!--<category android:name="android.intent.category.LAUNCHER" />-->
-             <!--</intent-filter>-->
+
+            <!-- <intent-filter> -->
+            <!--
+             <action android:name="android.intent.action.MAIN" /
+             >
+            -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".activity.SplashActivity" >
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.HomeActivity"/>
-
-        <activity android:name=".activity.GuidePageActivity"></activity>
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.GuidePageActivity" />
+        <activity android:name=".activity.HomeExpressActivity" />
+        <activity android:name=".activity.HomeLocalTownDeliveryActivity" />
+        <activity android:name=".activity.HomeLongDistanceFreightActivity"></activity>
     </application>
 
 </manifest>

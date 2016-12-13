@@ -9,6 +9,7 @@
     <string name="local_town_delivery">同城配送</string>
     <string name="online_store">商城</string>
     <string name="long_distance_freight">长途货运</string>
+    <string name="details_of_charges">收费详情</string>
     <!---->
     <string name="click_to_enter">点击进入</string>
     <string name="message">消息</string>
