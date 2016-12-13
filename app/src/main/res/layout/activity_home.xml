@@ -73,7 +73,7 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="3"
-                android:background="@drawable/ic_person_outline_black_24dp" />
+                android:background="@drawable/ic_person_outline_blue_24dp" />
 
             <TextView
                 android:id="@+id/tv_home_homepage"

@@ -94,8 +94,9 @@ public class HomeActivity extends MyBaseActivity {
         if (homeFragment == null) {
             homeFragment = new HomeFragment();
         }
-        setDefaultTextColor();
+        setDefaultColor();
         tvHomeHomepage.setTextColor(getPressTextColor());
+        ivHomeHomepage.setImageResource(R.drawable.ic_person_outline_blue_24dp);
         getSupportFragmentManager().beginTransaction().replace(R.id.contianer, homeFragment)
                 .commit();
     }
@@ -117,8 +118,9 @@ public class HomeActivity extends MyBaseActivity {
         if (nearbyFragment == null) {
             nearbyFragment = new NearbyFragment();
         }
-        setDefaultTextColor();
+        setDefaultColor();
         tvHomeNearby.setTextColor(getPressTextColor());
+        ivHomeNearby.setImageResource(R.drawable.ic_person_outline_blue_24dp);
         getSupportFragmentManager().beginTransaction().replace(R.id.contianer, nearbyFragment)
                 .commit();
     }
@@ -132,8 +134,9 @@ public class HomeActivity extends MyBaseActivity {
         if (mineFragment == null) {
             mineFragment = new MineFragment();
         }
-        setDefaultTextColor();
+        setDefaultColor();
         tvHomeI.setTextColor(getPressTextColor());
+        ivHomeI.setImageResource(R.drawable.ic_person_outline_blue_24dp);
         getSupportFragmentManager().beginTransaction().replace(R.id.contianer, mineFragment)
                 .commit();
     }
@@ -147,14 +150,18 @@ public class HomeActivity extends MyBaseActivity {
         tvHomeTitle.setText(name);
     }
 
-    private void setDefaultTextColor(){
+    private void setDefaultColor(){
         tvHomeHomepage.setTextColor(getResources().getColor(lightgray));
         tvHomeI.setTextColor(getResources().getColor(lightgray));
         tvHomeNearby.setTextColor(getResources().getColor(lightgray));
+        ivHomeHomepage.setImageResource(R.drawable.ic_person_outline_black_24dp);
+        ivHomeI.setImageResource(R.drawable.ic_person_outline_black_24dp);
+        ivHomeNearby.setImageResource(R.drawable.ic_person_outline_black_24dp);
     }
 
     private int getPressTextColor(){
         return getResources().getColor(themeBlue);
     }
+
 
 }

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.lisa.administrator.sixgold.R;
@@ -17,6 +19,7 @@ public class GuidePageActivity extends MyBaseActivity{
     private ViewPager viewPager;
     private ImageView[] images = new ImageView[3];
     private boolean isFromClassName;
+    private Button btn_click_to_enter;
 
 
     @Override
@@ -71,6 +74,7 @@ public class GuidePageActivity extends MyBaseActivity{
         images[0].setAlpha(1f);
         images[1].setAlpha(0.2f);
         images[2].setAlpha(0.2f);
+        btn_click_to_enter = (Button) findViewById(R.id.btn_click_to_enter);
     }
 
     private void init() {
@@ -122,9 +126,17 @@ public class GuidePageActivity extends MyBaseActivity{
             // arg0代表滑动完成后的页面的索引值
             setPoint(arg0);
             if (arg0 >=2) {
-                openActivity(HomeActivity.class);
-                saveSharedPreference();
-                finish();
+                btn_click_to_enter.setVisibility(View.VISIBLE);
+                btn_click_to_enter.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        openActivity(HomeActivity.class);
+                        saveSharedPreference();
+                         finish();
+                    }
+                });
+            }else {
+                btn_click_to_enter.setVisibility(View.INVISIBLE);
             }
         }
 
