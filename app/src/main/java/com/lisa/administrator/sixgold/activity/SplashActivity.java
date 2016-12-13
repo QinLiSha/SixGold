@@ -64,6 +64,10 @@ public class SplashActivity extends MyBaseActivity {
             startActivity(intent);
         }
     }
+
+    /**
+     * 增加补间动画，从透明到渐渐清晰，不过没有引用
+     */
     private void init() {
         iv_splash = (ImageView) findViewById(R.id.iv_splash);
         tv_splash = (TextView) findViewById(R.id.tv_splash);

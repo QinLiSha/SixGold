@@ -32,8 +32,11 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
     private ImageView[] mBottomImages;
     //    private LinearLayout mBottomLiner;
     private int currentViewPagerItem;
-    //是否自动播放
-    private boolean isAutoPlay;
+
+    private boolean isAutoPlay;    //是否自动播放
+    private boolean isHomeFragment;//是不是Fragment
+
+
     private MyHandler mHandler;
     private Thread mThread;
     private Unbinder binder;
@@ -64,6 +67,7 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         return view;
     }
 
+
     /**
      * 初始化
      */
@@ -76,6 +80,7 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         mViewPager.setOnTouchListener(this);
         mViewPager.addOnPageChangeListener(this);
         isAutoPlay = true;
+        isHomeFragment = true;
         //TODO: 添加ImageView
         addImageView();
         mAdapter.notifyDataSetChanged();
@@ -137,7 +142,7 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
             @Override
             public void run() {
                 super.run();
-                while (true) {
+                while (isHomeFragment) {//只有在页面是honeFragment时，才发送消息
                     mHandler.sendEmptyMessage(0);
                     try {
                         Thread.sleep(HomeFragment.VIEW_PAGER_DELAY);
@@ -150,6 +155,9 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         };
         mThread.start();
     }
+
+
+
 
 
     ///////////////////////////////////////////////////////////////////////////
@@ -202,6 +210,9 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
     public void onDestroyView() {
         super.onDestroyView();
         binder.unbind();
+        isAutoPlay = false;//刚开始没有在这里加上这句话，然后跳转到其他的fragment时，空指针
+        // homeFragment.mViewPager.setCurrentItem(++homeFragment.currentViewPagerItem);报空指针的错误；
+        isHomeFragment  =false;
     }
 
     @OnClick({R.id.iv_homefragment_express, R.id.iv_homefragment_local_town_delivery, R.id.iv_homefragment_online_store, R.id.iv_homefragment_long_distance_freight})
@@ -230,7 +241,6 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
             switch (msg.what) {
                 case 0:
                     HomeFragment homeFragment = mWeakReference.get();
-
                     if (homeFragment.isAutoPlay) {
                         homeFragment.mViewPager.setCurrentItem(++homeFragment.currentViewPagerItem);
                     }
