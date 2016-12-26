@@ -8,15 +8,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
         <activity android:name=".MainActivity">
 
-            <!-- <intent-filter> -->
-            <!--
-             <action android:name="android.intent.action.MAIN" /
-             >
-            -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
@@ -29,7 +29,10 @@
         <activity android:name=".activity.GuidePageActivity" />
         <activity android:name=".activity.HomeExpressActivity" />
         <activity android:name=".activity.HomeLocalTownDeliveryActivity" />
-        <activity android:name=".activity.HomeLongDistanceFreightActivity"></activity>
+        <activity android:name=".activity.HomeLongDistanceFreightActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.FindPwdActivity" />
     </application>
 
 </manifest>

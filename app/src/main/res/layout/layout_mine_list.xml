@@ -345,7 +345,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dp_10"
             android:layout_toRightOf="@+id/iv_common_problems"
-            android:text="@string/common_problems" />
+            android:text="@string/operation_flow" />
 
         <ImageView
             android:id="@+id/iv_common_problems_details"

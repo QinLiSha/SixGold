@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:duration="1500"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="-1"
+        android:repeatMode="restart"
+        android:toDegrees="360" />
+</set><!--
+      fromDegrees   动画开始时的角度
+      toDegrees     动画结束时物件的旋转角度,正代表顺时针
+      pivotX    属性为动画相对于物件的X坐标的开始位置
+      pivotY    属性为动画相对于物件的Y坐标的开始位置    -->
+
+    <!--alpha	渐变透明度动画效果--><!--scale	渐变尺寸伸缩动画效果--><!--translate	画面转换位置移动动画效果--><!--rotate	画面转移旋转动画效果-->

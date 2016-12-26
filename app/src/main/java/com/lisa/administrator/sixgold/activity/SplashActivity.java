@@ -1,6 +1,5 @@
 package com.lisa.administrator.sixgold.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -22,6 +21,7 @@ public class SplashActivity extends MyBaseActivity {
     private TextView tv_splash;
     private RelativeLayout relativeLayout;
     private static final String TAG = "SplashActivity";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,12 +56,14 @@ public class SplashActivity extends MyBaseActivity {
         timer.schedule(new MyTask(), 3000);//定时器延时执行任务的方法
     }
 
+
+
     //方法三：使用Java计时器
     class MyTask extends TimerTask {
         @Override
         public void run() {
-            Intent intent = new Intent(SplashActivity.this, GuidePageActivity.class);
-            startActivity(intent);
+            openActivity(GuidePageActivity.class);
+            finish();
         }
     }
 

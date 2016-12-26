@@ -129,17 +129,21 @@ public class HomeActivity extends MyBaseActivity {
      * 显示我的fragment的点击事件
      */
     @OnClick({R.id.ll_home_I, R.id.iv_home_I, R.id.tv_home_I})
-    public void showMineFragment() {
-        setTitle("个人中心");
-        if (mineFragment == null) {
-            mineFragment = new MineFragment();
-        }
-        setDefaultColor();
-        tvHomeI.setTextColor(getPressTextColor());
-        ivHomeI.setImageResource(R.drawable.ic_person_outline_blue_24dp);
-        getSupportFragmentManager().beginTransaction().replace(R.id.contianer, mineFragment)
-                .commit();
+    public void show() {
+        openActivity(LoginActivity.class);
+        finish();
     }
+//    public void showMineFragment() {
+//        setTitle("个人中心");
+//        if (mineFragment == null) {
+//            mineFragment = new MineFragment();
+//        }
+//        setDefaultColor();
+//        tvHomeI.setTextColor(getPressTextColor());
+//        ivHomeI.setImageResource(R.drawable.ic_person_outline_blue_24dp);
+//        getSupportFragmentManager().beginTransaction().replace(R.id.contianer, mineFragment)
+//                .commit();
+//    }
 
     /**
      * 设置标题栏中显示的内容
@@ -150,7 +154,7 @@ public class HomeActivity extends MyBaseActivity {
         tvHomeTitle.setText(name);
     }
 
-    private void setDefaultColor(){
+    private void setDefaultColor() {
         tvHomeHomepage.setTextColor(getResources().getColor(lightgray));
         tvHomeI.setTextColor(getResources().getColor(lightgray));
         tvHomeNearby.setTextColor(getResources().getColor(lightgray));
@@ -159,7 +163,7 @@ public class HomeActivity extends MyBaseActivity {
         ivHomeNearby.setImageResource(R.drawable.ic_person_outline_black_24dp);
     }
 
-    private int getPressTextColor(){
+    private int getPressTextColor() {
         return getResources().getColor(themeBlue);
     }
 

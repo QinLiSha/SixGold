@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">鑫鑫快运</string>
+    <string name="title">标题</string>
     <!--主页上的-->
     <string name="homepage">主页</string>
     <string name="individual_order">个人订单</string>
@@ -10,7 +11,7 @@
     <string name="online_store">商城</string>
     <string name="long_distance_freight">长途货运</string>
     <string name="details_of_charges">收费详情</string>
-    <!---->
+    <!---->请选择
     <string name="click_to_enter">点击进入</string>
     <string name="message">消息</string>
     <string name="order_message">订单消息</string>
@@ -24,20 +25,60 @@
     <string name="express_query">快递查询</string>
     <string name="about_us">关于我们</string>
     <string name="common_problems">常见问题</string>
+    <string name="operation_flow">操作流程</string>
     <string name="feedback">意见反馈</string>
     <string name="contact_customer_service">联系客服</string>
     <string name="agreement_terms">协议条款</string>
-    <string name="sign_in">登录</string>
+    <string name="log_in">登录</string>
+    <string name="tv_register">注册</string>
     <string name="sign_out">退出登录</string>
     <string name="register">免费注册</string>
     <string name="forget_pwd">忘记密码</string>
     <string name="phone_number">手机号码</string>
+    <string name="password_format">0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="password">密码</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="tele_phone_num">手机号</string>
+    <string name="new_pwd">新密码</string>
+    <string name="sure">确定</string>
     <string name="please_enter_phone_number">请输入手机号码</string>
     <string name="please_enter_verification_code">请输入验证码</string>
     <string name="please_enter_invitation_code">请输入邀请码</string>
     <string name="please_enter_password">请输入6-20位英文或数字密码</string>
     <string name="I_have_agreed">我已同意鑫鑫快运的《用户协议》</string>
+    <string name="I_have_read_and_agreed">我已阅读并同意</string>
+    <string name="service_agreement">《服务协议》</string>
+    <string name="I_want_to_sending">我要寄件</string>
+    <string name="from">从</string>
+    <string name="fast_pick_up">30分钟内快速上门取货</string>
+    <string name="please_choose">请选择</string>
+    <string name="things_weight">物品重量</string>
+    <string name="is_need_invoice">是否需要发票</string>
+    <string name="item_type_description">物品类型说明</string>
+    <string name="please_choose_from_address">请选择起始地址</string>
+    <string name="please_choose_to_address">请选择终点地址</string>
+    <string name="please_fill_in_detail_address">请填写详细地址</string>
+
+    <string name="please_fill_in_the_name_of_the_goods">请输入货物名称</string>
+    <string name="please_fill_in_the_weight_of_the_goods">请输入货物重量（单位吨）</string>
+    <string name="please_choose_the_provincial_city">请选择省市区</string>
+    <string name="please_fill_in_sender_name">请填写寄件人姓名</string>
+    <string name="please_fill_in_sender_tel">请填写寄件人电话</string>
+    <string name="please_fill_in_recipient_name">请填写收件人姓名</string>
+    <string name="please_fill_in_recipient_tel">请填写收件人电话</string>
+    <string name="order_note">订单备注</string>
+    <string name="insurance_purchase">保险购买</string>
+    <string name="instant_car">即时用车</string>
+    <string name="make_an_appointment">预约</string>
+    <string name="home_freight">上门运费:</string>
+    <string name="estimated">预计</string>
+    <string name="express_company">快递公司</string>
+    <string name="to">到</string>
+    <string name="electric_vehicle">电动车</string>
+    <string name="mini_bus">微面货车</string>
+    <string name="mini_van">小型货车</string>
+    <string name="matters_need_attention">注意事项</string>
+    <string name="matters_need_attention_details">注意事项 : 禁止邮寄微生物，动物，易碎，易燃易爆化学物品黄赌毒等国家法律规定违禁品，邮寄员必须开箱验视！</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">我是空白的fragment页面</string>

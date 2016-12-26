@@ -3,7 +3,11 @@
     <!--下面是距离宽和高dp-->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
     <dimen name="activity_actionbar_item_height">43dp</dimen>
+    <dimen name="activity_high_item_height">53dp</dimen>
+    <dimen name="activity_low_item_height">34dp</dimen>
+
     <dimen name="activity_item_height">33dp</dimen>
     <dimen name="View_in_item_lightgray">3dp</dimen>
     <dimen name="View_in_actionbar_lightgray">1dp</dimen>
@@ -46,6 +50,7 @@
     <dimen name="dp_190">190dp</dimen>
     <dimen name="dp_200">200dp</dimen>
     <!--下面的是字体的大小sp-->
+    <dimen name="text_actionBar_item">35px</dimen>
     <dimen name="textSize_5">5px</dimen>
     <dimen name="textSize_10">10px</dimen>
     <dimen name="textSize_15">15px</dimen>

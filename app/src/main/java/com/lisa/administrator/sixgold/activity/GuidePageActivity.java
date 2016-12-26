@@ -22,6 +22,8 @@ public class GuidePageActivity extends MyBaseActivity{
     private Button btn_click_to_enter;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,7 @@ public class GuidePageActivity extends MyBaseActivity{
 
 
     }
+
 
     /**
      * 记录是否是第一次登陆页面

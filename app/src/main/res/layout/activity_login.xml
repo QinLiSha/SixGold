@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_and_login_background"
+    android:orientation="vertical"
+    tools:context="com.lisa.administrator.sixgold.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_left_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_chevron_left_grey_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_50"
+        android:text="@string/app_name"
+        android:textColor="@color/defaultBackgroundColor"
+        android:textSize="40sp" />
+
+
+    <EditText
+
+        android:id="@+id/et_tel_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:singleLine="true"
+        android:background="#99ffffff"
+        android:inputType="number"
+        android:hint="@string/phone_number"
+        android:padding="@dimen/dp_10" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="#99ffffff"
+        android:maxLength="20"
+        android:digits="@string/password_format"
+        android:hint="@string/password"
+        android:padding="@dimen/dp_10"
+        android:singleLine="true"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@color/themeBlue"
+        android:padding="@dimen/dp_10"
+        android:text="@string/log_in"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_free_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:padding="@dimen/dp_5"
+            android:text="@string/register"
+            android:textColor="@color/defaultBackgroundColor" />
+
+        <TextView
+            android:id="@+id/tv_foget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:padding="@dimen/dp_5"
+            android:text="@string/forget_pwd"
+            android:textColor="@color/defaultBackgroundColor" />
+    </LinearLayout>
+
+</LinearLayout>

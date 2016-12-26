@@ -213,7 +213,7 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
         super.onDestroyView();
         binder.unbind();
         isAutoPlay = false;//刚开始没有在这里加上这句话，然后跳转到其他的fragment时，空指针
-        // homeFragment.mViewPager.setCurrentItem(++homeFragment.currentViewPagerItem);报空指针的错误；
+//         homeFragment.mViewPager.setCurrentItem(++homeFragment.currentViewPagerItem);报空指针的错误
         isHomeFragment = false;
     }
 
