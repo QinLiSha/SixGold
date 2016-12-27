@@ -15,6 +15,7 @@ public class HomeLongDistanceFreightActivity extends MyBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_long_distance_freight);
+        initActionBarOneImg(R.drawable.ic_chevron_left_grey_24dp, "长途货运", "收费详情", null);
     }
 
 }

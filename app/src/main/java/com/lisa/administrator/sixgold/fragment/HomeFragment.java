@@ -230,7 +230,7 @@ public class HomeFragment extends Fragment implements ViewPager.OnPageChangeList
                 ((HomeActivity) getActivity()).showToast("商城正在紧急开发中，请期待。。。");
                 break;
             case R.id.iv_homefragment_long_distance_freight:
-                ((HomeActivity)getActivity()).openActivity(HomeLongDistanceFreightActivity.class);
+                ((HomeActivity) getActivity()).openActivity(HomeLongDistanceFreightActivity.class);
                 break;
         }
     }

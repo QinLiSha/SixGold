@@ -11,9 +11,9 @@ import com.zhy.autolayout.AutoLinearLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
+ *两边都是ImageView的ActionBar
  * Created by One Of A Kind Lisa on 2016/12/24
  */
 
@@ -24,13 +24,11 @@ public class ActionBarTwoImg extends AutoLinearLayout {
     TextView tvTitleTwoImg;
     @BindView(R.id.iv_right_two_img)
     ImageView ivRightTwoImg;
-    Unbinder unbinder;
-
 
     public ActionBarTwoImg(Context context, AttributeSet attrs) {
         super(context, attrs);
-        unbinder = ButterKnife.bind(this);
         inflate(context, R.layout.actionbar_img_and_img, this);
+        ButterKnife.bind(this);
         // TODO: 2016/12/24 这里的ButterKnife没有解绑会不会有影响
     }
 

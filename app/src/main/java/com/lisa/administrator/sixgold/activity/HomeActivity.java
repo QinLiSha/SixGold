@@ -1,6 +1,7 @@
 package com.lisa.administrator.sixgold.activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -70,13 +71,17 @@ public class HomeActivity extends MyBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        loadHomeFragment();
         unbinder = ButterKnife.bind(this);
+        loadHomeFragment();
     }
 
+    /**
+     * 加载主界面的方法
+     */
     private void loadHomeFragment() {
         homeFragment = new HomeFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.contianer, homeFragment).commit();
+        ivHomeRight.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -95,6 +100,7 @@ public class HomeActivity extends MyBaseActivity {
             homeFragment = new HomeFragment();
         }
         setDefaultColor();
+        ivHomeRight.setVisibility(View.VISIBLE);
         tvHomeHomepage.setTextColor(getPressTextColor());
         ivHomeHomepage.setImageResource(R.drawable.ic_person_outline_blue_24dp);
         getSupportFragmentManager().beginTransaction().replace(R.id.contianer, homeFragment)
@@ -106,8 +112,10 @@ public class HomeActivity extends MyBaseActivity {
      */
     @OnClick({R.id.ll_home_individual_order, R.id.iv_home_individual_order, R.id.tv_home_individual_order})
     public void showorder() {
-//TODO.....................个人订单
+        openActivity(MyOrderActivity.class);
+        finish();
     }
+//TODO.....................个人订单
 
     /**
      * 显示附近的fragment的点击事件
@@ -118,6 +126,7 @@ public class HomeActivity extends MyBaseActivity {
         if (nearbyFragment == null) {
             nearbyFragment = new NearbyFragment();
         }
+        ivHomeRight.setVisibility(View.INVISIBLE);
         setDefaultColor();
         tvHomeNearby.setTextColor(getPressTextColor());
         ivHomeNearby.setImageResource(R.drawable.ic_person_outline_blue_24dp);
@@ -129,16 +138,20 @@ public class HomeActivity extends MyBaseActivity {
      * 显示我的fragment的点击事件
      */
     @OnClick({R.id.ll_home_I, R.id.iv_home_I, R.id.tv_home_I})
+    // TODO: 2016/12/27 如果没有登录需要跳转到登录界面
+
     public void show() {
         openActivity(LoginActivity.class);
         finish();
     }
-//    public void showMineFragment() {
+
+    //    public void showMineFragment() {
 //        setTitle("个人中心");
 //        if (mineFragment == null) {
 //            mineFragment = new MineFragment();
 //        }
-//        setDefaultColor();
+//                ivHomeRight.setVisibility(View.INVISIBLE);
+//    setDefaultColor();
 //        tvHomeI.setTextColor(getPressTextColor());
 //        ivHomeI.setImageResource(R.drawable.ic_person_outline_blue_24dp);
 //        getSupportFragmentManager().beginTransaction().replace(R.id.contianer, mineFragment)
@@ -147,7 +160,6 @@ public class HomeActivity extends MyBaseActivity {
 
     /**
      * 设置标题栏中显示的内容
-     *
      * @param name
      */
     public void setTitle(String name) {
@@ -155,9 +167,9 @@ public class HomeActivity extends MyBaseActivity {
     }
 
     private void setDefaultColor() {
-        tvHomeHomepage.setTextColor(getResources().getColor(lightgray));
-        tvHomeI.setTextColor(getResources().getColor(lightgray));
-        tvHomeNearby.setTextColor(getResources().getColor(lightgray));
+        tvHomeHomepage.setTextColor(getDefaultCorlor());
+        tvHomeI.setTextColor(getDefaultCorlor());
+        tvHomeNearby.setTextColor(getDefaultCorlor());
         ivHomeHomepage.setImageResource(R.drawable.ic_person_outline_black_24dp);
         ivHomeI.setImageResource(R.drawable.ic_person_outline_black_24dp);
         ivHomeNearby.setImageResource(R.drawable.ic_person_outline_black_24dp);
@@ -165,6 +177,9 @@ public class HomeActivity extends MyBaseActivity {
 
     private int getPressTextColor() {
         return getResources().getColor(themeBlue);
+    }
+    private int getDefaultCorlor(){
+        return getResources().getColor(lightgray);
     }
 
 

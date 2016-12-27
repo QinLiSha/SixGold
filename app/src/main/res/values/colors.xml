@@ -6,6 +6,7 @@
     <color name="defaultBackgroundColor">#fafafa</color><!--默认的背景颜色-->
     <color name="themeBlue">#2B94FD</color><!--这是鑫鑫快运的蓝色主题：选中，主题，按钮-->
     <!--下面是-->
+    <color name="defaultTextViewColor">#8a000000</color>
     <color name="transparent">#00000000</color><!--透明色 -->
     <color name="white">#ffffff</color> <!-- 白色 -->
     <color name="ivory">#fffff0</color> <!-- 象牙色 -->

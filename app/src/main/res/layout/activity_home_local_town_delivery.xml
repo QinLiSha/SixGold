@@ -7,42 +7,11 @@
     android:orientation="vertical"
     tools:context="com.lisa.administrator.sixgold.activity.HomeLocalTownDeliveryActivity">
 
-    <RelativeLayout
+    <com.lisa.administrator.sixgold.view.ActionBarOneImg
+        android:id="@+id/actionbarView_oneImg"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/activity_actionbar_item_height"
-        android:layout_alignParentTop="true"
-        android:background="@color/white">
+        android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/iv_home_left"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:background="@drawable/ic_chevron_left_grey_24dp" />
-
-        <TextView
-            android:id="@+id/tv_home_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/local_town_delivery"
-            android:textSize="@dimen/textSize_35" />
-
-        <TextView
-            android:id="@+id/iv_home_right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="9dp"
-            android:layout_marginRight="9dp"
-            android:text="@string/details_of_charges"
-            android:textColor="@color/themeBlue"
-            android:textSize="@dimen/textSize_30" />
-    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"

@@ -13,6 +13,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
+ * 左边是imageView，右边是textView的ActionBar
  * Created by One Of A Kind Lisa on 2016/12/24
  */
 
