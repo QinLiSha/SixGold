@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.lisa.administrator.sixgold.R;
+import com.lisa.administrator.sixgold.activity.express.ChooseTimeActivity;
 import com.lisa.administrator.sixgold.base.MyBaseActivity;
 import com.lisa.administrator.sixgold.fragment.HomeFragment;
 import com.lisa.administrator.sixgold.fragment.MineFragment;
@@ -142,6 +143,7 @@ public class HomeActivity extends MyBaseActivity {
 
     public void show() {
         openActivity(LoginActivity.class);
+        openActivity(ChooseTimeActivity.class);
         finish();
     }
 
@@ -178,7 +180,8 @@ public class HomeActivity extends MyBaseActivity {
     private int getPressTextColor() {
         return getResources().getColor(themeBlue);
     }
-    private int getDefaultCorlor(){
+
+    private int getDefaultCorlor() {
         return getResources().getColor(lightgray);
     }
 

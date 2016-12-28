@@ -15,7 +15,7 @@
             android:name="design_height"
             android:value="1920" />
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,10 @@
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.FindPwdActivity" />
-        <activity android:name=".activity.MyOrderActivity"></activity>
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.express.ChooseTimeActivity" />
+        <activity android:name=".activity.express.DetailsForChargesActivity" />
+        <activity android:name=".activity.express.ChooseAddressActivity"></activity>
     </application>
 
 </manifest>

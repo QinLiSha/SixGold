@@ -51,6 +51,7 @@
     <string name="I_want_to_sending">我要寄件</string>
     <string name="from">从</string>
     <string name="fast_pick_up">30分钟内快速上门取货</string>
+    <string name="make_an_appointment_for_time">预约上门时间</string>
     <string name="please_choose">请选择</string>
     <string name="things_weight">物品重量</string>
     <string name="is_need_invoice">是否需要发票</string>
