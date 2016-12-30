@@ -37,8 +37,6 @@ public class LoginActivity extends MyBaseActivity {
     LinearLayout activityLogin;
     private Unbinder binder;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

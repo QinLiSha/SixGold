@@ -40,6 +40,7 @@
     <string name="find_pwd">找回密码</string>
     <string name="tele_phone_num">手机号</string>
     <string name="new_pwd">新密码</string>
+    <string name="save">保存</string>
     <string name="sure">确定</string>
     <string name="please_enter_phone_number">请输入手机号码</string>
     <string name="please_enter_verification_code">请输入验证码</string>

@@ -34,7 +34,11 @@
         <activity android:name=".activity.MyOrderActivity" />
         <activity android:name=".activity.express.ChooseTimeActivity" />
         <activity android:name=".activity.express.DetailsForChargesActivity" />
-        <activity android:name=".activity.express.ChooseAddressActivity"></activity>
+        <activity android:name=".activity.express.ChooseAddressActivity" />
+        <activity android:name=".activity.address.ChooseProvinceActivity" />
+        <activity android:name=".activity.address.ChooseCityActivity" />
+        <activity android:name=".activity.address.ChooseDistrictActivity" />
+        <activity android:name=".activity.express.AddressBookActivity"></activity>
     </application>
 
 </manifest>

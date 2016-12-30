@@ -2,7 +2,6 @@ package com.lisa.administrator.sixgold.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,7 +31,7 @@ public class ActionBarTwoImg extends AutoLinearLayout {
         // TODO: 2016/12/24 这里的ButterKnife没有解绑会不会有影响
     }
 
-    public void initActionBarTwoImg(int leftImgId, String title, int rightImgId, View.OnClickListener onClickListener) {
+    public void initActionBarTwoImg(int leftImgId, String title, int rightImgId, OnClickListener onClickListener) {
         tvTitleTwoImg.setText(title);
         if (leftImgId != -1) {
             ivLeftTwoImg.setImageResource(leftImgId);

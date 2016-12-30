@@ -8,7 +8,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.lisa.administrator.sixgold.R;
-import com.lisa.administrator.sixgold.activity.express.ChooseTimeActivity;
 import com.lisa.administrator.sixgold.base.MyBaseActivity;
 import com.lisa.administrator.sixgold.fragment.HomeFragment;
 import com.lisa.administrator.sixgold.fragment.MineFragment;
@@ -143,11 +142,11 @@ public class HomeActivity extends MyBaseActivity {
 
     public void show() {
         openActivity(LoginActivity.class);
-        openActivity(ChooseTimeActivity.class);
+//        openActivity(ChooseTimeActivity.class);
         finish();
     }
 
-    //    public void showMineFragment() {
+//    public void showMineFragment() {
 //        setTitle("个人中心");
 //        if (mineFragment == null) {
 //            mineFragment = new MineFragment();
@@ -162,6 +161,7 @@ public class HomeActivity extends MyBaseActivity {
 
     /**
      * 设置标题栏中显示的内容
+     *
      * @param name
      */
     public void setTitle(String name) {

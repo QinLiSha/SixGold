@@ -127,4 +127,14 @@
 
     </LinearLayout>
 
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionbar_item_height"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/themeBlue"
+        android:text="@string/save"
+        android:textColor="@color/white" />
+
 </LinearLayout>
