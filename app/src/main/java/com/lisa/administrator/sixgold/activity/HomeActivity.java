@@ -20,7 +20,6 @@ import butterknife.Unbinder;
 
 import static com.lisa.administrator.sixgold.R.color.lightgray;
 import static com.lisa.administrator.sixgold.R.color.themeBlue;
-import static com.lisa.administrator.sixgold.R.id.tv_home_title;
 
 /**
  * 主页面
@@ -28,7 +27,7 @@ import static com.lisa.administrator.sixgold.R.id.tv_home_title;
 public class HomeActivity extends MyBaseActivity {
     @BindView(R.id.iv_home_left)
     ImageView ivHomeLeft;
-    @BindView(tv_home_title)
+    @BindView(R.id.tv_home_title)
     TextView tvHomeTitle;
     @BindView(R.id.iv_home_right)
     ImageView ivHomeRight;
