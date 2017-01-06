@@ -15,15 +15,6 @@
         android:background="@drawable/ic_chevron_left_grey_24dp" />
 
     <TextView
-        android:id="@+id/tv_title_one_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/title"
-        android:textColor="@color/black"
-        android:textSize="@dimen/textSize_35" />
-
-    <TextView
         android:id="@+id/tv_right_one_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +23,19 @@
         android:layout_marginRight="@dimen/dp_10"
         android:text="待替换"
         android:textColor="@color/black"
-        android:textSize="@dimen/textSize_25" />
+        android:textSize="@dimen/sp_small" />
+
+    <TextView
+        android:id="@+id/tv_title_one_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_middle"
+        android:layout_alignBaseline="@+id/tv_right_one_img"
+        android:layout_alignBottom="@+id/tv_right_one_img"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
 
 

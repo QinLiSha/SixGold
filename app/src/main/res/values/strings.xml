@@ -35,7 +35,7 @@
     <string name="register">免费注册</string>
     <string name="forget_pwd">忘记密码</string>
     <string name="phone_number">手机号码</string>
-    <string name="password_format">0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="password_format">0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string><!--密码的格式-->
     <string name="password">密码</string>
     <string name="find_pwd">找回密码</string>
     <string name="tele_phone_num">手机号</string>

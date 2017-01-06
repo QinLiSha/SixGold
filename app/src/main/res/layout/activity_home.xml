@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/app_name"
-            android:textSize="@dimen/textSize_35" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_middle" />
 
         <ImageView
             android:id="@+id/iv_home_right"
@@ -41,6 +42,7 @@
             android:background="@drawable/ic_local_florist_red_24dp"
             android:layout_marginRight="@dimen/dp_10"/>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/contianer"
         android:layout_width="match_parent"
@@ -84,7 +86,7 @@
                 android:layout_weight="2"
                 android:text="@string/homepage"
                 android:textColor="@color/themeBlue"
-                android:textSize="@dimen/textSize_35" />
+                style="@style/my_textview_style_title"/>
         </LinearLayout>
 
         <LinearLayout
@@ -111,7 +113,7 @@
                 android:layout_weight="2"
                 android:text="@string/individual_order"
                 android:textColor="@color/lightgray"
-                android:textSize="@dimen/textSize_35" />
+                style="@style/my_textview_style_title" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,7 +140,7 @@
                 android:layout_weight="2"
                 android:text="@string/nearby"
                 android:textColor="@color/lightgray"
-                android:textSize="@dimen/textSize_35" />
+                style="@style/my_textview_style_title" />
         </LinearLayout>
 
         <LinearLayout
@@ -165,8 +167,9 @@
                 android:layout_weight="2"
                 android:text="@string/I"
                 android:textColor="@color/lightgray"
-                android:textSize="@dimen/textSize_35" />
+                style="@style/my_textview_style_title" />
         </LinearLayout>
+
 
     </LinearLayout>
 

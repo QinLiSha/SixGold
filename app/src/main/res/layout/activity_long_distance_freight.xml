@@ -26,68 +26,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_5"
-                android:background="@color/white"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_actionbar_item_height"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/dp_10"
-                        android:background="@drawable/ic_create_grey_24dp" />
-
-                    <EditText
-                        android:id="@+id/editText3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="@dimen/dp_15"
-
-                        android:layout_marginTop="@dimen/dp_5"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_the_name_of_the_goods" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_actionbar_item_height"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/dp_10"
-                        android:background="@drawable/ic_create_grey_24dp" />
-
-                    <EditText
-                        android:id="@+id/editText4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:layout_marginTop="@dimen/dp_5"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_the_weight_of_the_goods" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_5"
                 android:background="@color/white"
                 android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_actionbar_item_height">
+                    android:layout_height="@dimen/activity_low_item_height">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -111,7 +55,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/please_choose_the_provincial_city" />
+                            android:text="@string/please_choose_the_provincial_city"/>
 
                     </LinearLayout>
 
@@ -125,38 +69,27 @@
                 </RelativeLayout>
 
                 <EditText
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
                     android:hint="@string/please_fill_in_detail_address"
-                    android:padding="@dimen/dp_5" />
+                    android:id="@+id/editText2" />
 
                 <EditText
+                    android:id="@+id/editText3"
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
-                    android:hint="@string/please_fill_in_sender_name"
-                    android:padding="@dimen/dp_5" />
+                    android:hint="@string/please_fill_in_sender_name" />
+
 
                 <EditText
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
-                    android:hint="@string/please_fill_in_sender_tel"
-                    android:padding="@dimen/dp_5" />
+                    android:hint="@string/please_fill_in_sender_tel" />
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_actionbar_item_height">
+                    android:layout_height="@dimen/activity_low_item_height">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -195,40 +128,28 @@
                         android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
                 </RelativeLayout>
 
+
                 <EditText
-                    android:id="@+id/editText2"
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
                     android:hint="@string/please_fill_in_detail_address"
-                    android:padding="@dimen/dp_5" />
+                    android:id="@+id/editText4" />
 
                 <EditText
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
-                    android:hint="@string/please_fill_in_recipient_name"
-                    android:padding="@dimen/dp_5" />
+                    android:hint="@string/please_fill_in_recipient_name" />
+
 
                 <EditText
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/dp_5"
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:background="@color/defaultBackgroundColor"
-                    android:hint="@string/please_fill_in_recipient_tel"
-                    android:padding="@dimen/dp_5" />
+                    android:hint="@string/please_fill_in_recipient_tel" />
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/activity_low_item_height"
+                    android:layout_height="@dimen/activity_actionbar_item_height"
                     android:layout_marginLeft="@dimen/dp_20"
                     android:layout_marginRight="@dimen/dp_15"
                     android:gravity="center_vertical">
@@ -270,16 +191,61 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/editText"
+                    style="@style/my_edittext_style_normal"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_100"
-                    android:layout_marginBottom="@dimen/dp_15"
-                    android:layout_marginLeft="@dimen/dp_15"
-                    android:layout_marginRight="@dimen/dp_15"
-                    android:layout_marginTop="@dimen/dp_5"
-                    android:background="@color/defaultBackgroundColor"
                     android:hint="@string/matters_need_attention_details"
-                    android:textSize="@dimen/textSize_35" />
+                    android:layout_height="@dimen/dp_100"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_actionbar_item_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:background="@drawable/ic_create_grey_24dp" />
+
+                    <EditText
+                        style="@style/my_edittext_style_normal"
+                        android:layout_width="match_parent"
+                        android:hint="@string/please_fill_in_the_name_of_the_goods" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_actionbar_item_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:background="@drawable/ic_create_grey_24dp" />
+
+                    <EditText
+                        style="@style/my_edittext_style_normal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_the_weight_of_the_goods" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

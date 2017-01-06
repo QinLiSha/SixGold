@@ -29,10 +29,9 @@
                 android:background="@drawable/ic_person_outline_black_24dp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/dp_5"
-                android:background="@color/defaultBackgroundColor" />
+                android:id="@+id/editText8"
+                style="@style/my_edittext_style_normal"
+                android:layout_width="match_parent" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,10 +48,8 @@
                 android:background="@drawable/ic_person_outline_black_24dp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/dp_5"
-                android:background="@color/defaultBackgroundColor" />
+                style="@style/my_edittext_style_normal"
+                android:layout_width="match_parent" />
         </LinearLayout>
 
         <View
@@ -115,10 +112,8 @@
                 android:background="@drawable/ic_person_outline_black_24dp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/dp_5"
-                android:background="@color/defaultBackgroundColor" />
+                style="@style/my_edittext_style_normal"
+                android:layout_width="match_parent" />
         </LinearLayout>
 
 
@@ -127,11 +122,8 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/my_button_style_01"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/activity_actionbar_item_height"
-        android:layout_margin="@dimen/dp_10"
-        android:background="@color/themeBlue"
-        android:text="@string/save"
-        android:textColor="@color/white" />
+        android:text="@string/save" />
 
 </LinearLayout>

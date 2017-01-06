@@ -135,34 +135,25 @@
 
 
                     <EditText
+                        android:id="@+id/editText9"
+                        style="@style/my_edittext_style_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_detail_address"
-                        android:padding="@dimen/dp_5" />
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_detail_address" />
 
                     <EditText
+                        android:id="@+id/editText10"
+                        style="@style/my_edittext_style_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_sender_name"
-                        android:padding="@dimen/dp_5" />
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_sender_name" />
 
                     <EditText
+                        style="@style/my_edittext_style_telephone_num"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
                         android:background="@color/defaultBackgroundColor"
                         android:hint="@string/please_fill_in_sender_tel"
-                        android:padding="@dimen/dp_5" />
+                        android:id="@+id/editText11" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -194,35 +185,22 @@
 
 
                     <EditText
-                        android:id="@+id/editText2"
+                        style="@style/my_edittext_style_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_detail_address"
-                        android:padding="@dimen/dp_5" />
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_detail_address" />
 
                     <EditText
+                        style="@style/my_edittext_style_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_recipient_name"
-                        android:padding="@dimen/dp_5" />
-
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_recipient_name"/>
                     <EditText
+                        style="@style/my_edittext_style_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp_5"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:layout_marginRight="@dimen/dp_15"
-                        android:background="@color/defaultBackgroundColor"
-                        android:hint="@string/please_fill_in_recipient_tel"
-                        android:padding="@dimen/dp_5" />
+                        android:layout_margin="@dimen/dp_5"
+                        android:hint="@string/please_fill_in_recipient_tel"/>
+
 
                 </LinearLayout>
 

@@ -10,7 +10,7 @@
     <com.lisa.administrator.sixgold.view.ActionBarTwoImg
         android:id="@+id/actionbarView_twoImg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
     <LinearLayout
@@ -29,29 +29,19 @@
             android:layout_gravity="center"
             android:padding="@dimen/dp_5"
             android:text="@string/tele_phone_num"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_middle" />
 
         <EditText
             android:id="@+id/et_tel_num"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:background="@color/defaultBackgroundColor"
-            android:hint="@string/please_enter_phone_number"
-            android:padding="@dimen/dp_5"
-            android:singleLine="true"
-            android:textSize="@dimen/textSize_40" />
+android:layout_width="match_parent"
+            style="@style/my_edittext_style_telephone_num"
+           />
 
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:padding="@dimen/dp_5"
-            android:background="@color/themeBlue"
-            android:textColor="@color/white"
-            android:text="发送验证码" />
+
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,21 +50,26 @@
         android:layout_marginBottom="@dimen/dp_5"
         android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="@dimen/dp_10">
+        android:padding="@dimen/dp_10"
+        android:weightSum="3">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/defaultBackgroundColor"
-            android:hint="@string/please_enter_verification_code"
-            android:textSize="@dimen/textSize_40"
-            android:padding="@dimen/dp_5"
-            android:singleLine="true"
-            android:id="@+id/et_verificationCode" />
+            android:id="@+id/editText7"
+            style="@style/my_edittext_style_normal"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:hint="@string/please_enter_verification_code" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/my_button_style_01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="发送验证码" />
 
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_high_item_height"
@@ -85,23 +80,18 @@
         android:padding="@dimen/dp_10">
 
         <TextView
+            android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/new_pwd"
             android:textColor="@color/black"
-            android:id="@+id/textView9" />
+            android:textSize="@dimen/sp_middle" />
 
         <EditText
             android:id="@+id/et_pwd"
-            android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:background="@color/defaultBackgroundColor"
-            android:hint="@string/please_enter_password"
-            android:padding="@dimen/dp_5"
-            android:singleLine="true"
-            android:textSize="@dimen/textSize_40" />
+            style="@style/my_edittext_style_password"
+            android:layout_width="match_parent" />
 
     </LinearLayout>
 
@@ -115,32 +105,27 @@
         android:padding="@dimen/dp_10">
 
         <TextView
+            android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/new_pwd"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_middle" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@color/defaultBackgroundColor"
-            android:hint="@string/please_enter_password"
-            android:padding="@dimen/dp_5"
-            android:singleLine="true"
-            android:textSize="@dimen/textSize_40"
-            android:id="@+id/et_re_pwd" />
+            android:id="@+id/et_re_pwd"
+            style="@style/my_edittext_style_password"
+            android:layout_width="match_parent" />
+
 
     </LinearLayout>
 
-
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_10"
-        android:background="@color/themeBlue"
-        android:text="@string/sure"
         android:id="@+id/btn_sure"
-        android:textColor="@color/white" />
+        style="@style/my_button_style_01"
+        android:layout_width="match_parent"
+
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/sure" />
 </LinearLayout>

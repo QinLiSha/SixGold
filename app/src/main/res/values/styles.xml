@@ -16,4 +16,64 @@
         <item name="android:windowBackground">@color/transparent</item><!--:设置dialog的背景-->
         <item name="android:backgroundDimEnabled">false</item><!--: 背景是否模糊显示-->
     </style>
+    <!--my_button_style_01是按钮的一般样式是蓝色圆角的-->
+    <style name="my_button_style_01" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">@dimen/button_normal_width</item>
+        <item name="android:layout_height">@dimen/activity_low_item_height</item>
+        <item name="android:background">@drawable/button_background_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:textSize">@dimen/sp_middle</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+    </style>
+    <!--my_edittext_style_normal是密码输入框的样式-->
+    <style name="my_edittext_style_normal" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/button_normal_width</item><!--宽度-->
+        <item name="android:layout_height">@dimen/activity_low_item_height</item><!--高度-->
+        <item name="android:layout_gravity">center</item><!--居中显示-->
+        <item name="android:textSize">@dimen/sp_middle</item><!--字体大小-->
+        <item name="android:background">@drawable/edittext_background_normal</item><!--背景色或形状-->
+        <item name="android:layout_margin">@dimen/dp_10</item><!--外边距是10dp-->
+        <item name="android:paddingLeft">@dimen/dp_10</item><!--左边内边距是10dp-->
+        <item name="android:lines">1</item><!--只允许是单行输入-->
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+    <!--my_edittext_style_password是密码输入框的样式-->
+    <style name="my_edittext_style_password" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/button_normal_width</item><!--宽度-->
+        <item name="android:layout_height">@dimen/activity_low_item_height</item><!--高度-->
+        <item name="android:layout_gravity">center</item><!--居中显示-->
+        <item name="android:textSize">@dimen/sp_middle</item><!--字体大小-->
+        <item name="android:background">@drawable/edittext_background_normal</item><!--背景色或形状-->
+        <item name="android:layout_margin">@dimen/dp_10</item><!--外边距是10dp-->
+        <item name="android:paddingLeft">@dimen/dp_10</item><!--左边内边距是10dp-->
+        <item name="android:password">true</item><!--是密码的格式-->
+        <item name="android:maxLength">16</item><!--最长是16个字符-->
+        <item name="android:lines">1</item><!--只允许是单行输入-->
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:hint">@string/please_enter_password</item>
+        <item name="android:digits">@string/password_format</item>
+    </style>
+    <!--my_edittext_style_password是手机号输入框的样式-->
+    <style name="my_edittext_style_telephone_num" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/button_normal_width</item><!--宽度-->
+        <item name="android:layout_height">@dimen/activity_low_item_height</item><!--高度-->
+        <item name="android:hint">@string/please_enter_phone_number</item>
+        <item name="android:layout_gravity">center</item><!--居中显示-->
+        <item name="android:textSize">@dimen/sp_middle</item><!--字体大小-->
+        <item name="android:background">@drawable/edittext_background_normal</item><!--背景色或形状-->
+        <item name="android:layout_margin">@dimen/dp_10</item><!--外边距是10dp-->
+        <item name="android:paddingLeft">@dimen/dp_10</item><!--左边内边距是10dp-->
+        <item name="android:maxLength">11</item><!--最长是11个字符-->
+        <item name="android:lines">1</item><!--只允许是单行输入-->
+        <item name="android:inputType">phone</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+    <!--textview标题的样式-->
+    <style name="my_textview_style_title">
+        <item name="android:textSize">@dimen/sp_middle</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>
